@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* 全局 */
+html,body,div,h1,h2,h3,h4,h5,h6,p,span,em,a,img,ul,li,ol,form,button,input,textarea,dl,dt,dd,iframe{margin:0;padding:0;}
+body{text-align:center;font:14px/1.5 "\5FAE\8F6F\96C5\9ED1","\5B8B\4F53","Verdana",sans-serif;) repeat 0 0;color:#888;}
+a {cursor: pointer;color:#FFDC35;text-decoration: none;outline: 0 none;-webkit-transition: all .2s linear;-moz-transition:all .2s linear;-ms-transition: all .2s linear;transition: all .2s linear;}
+a:hover,a:focus{text-decoration:none;color:#FFDC35;}
+h1,h2,h3,h4,h5,h6,em{font-size:14px;font-weight:normal;color:#FFDC35;}
+h2{color:#FFDC35;}
+ol,ul{list-style:none;}
+em{font-style: normal;}
+
+.clear{clear:both;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{display:inline-block;}/* Hides from IE-mac \*/* html .clearfix{height:1%;}.clearfix{display:block;}/*.clearfix{zoom:1;}*/
+.wrap{margin:0 auto;margin-top:50px;width:930px;} /* 修改整个网页的宽度 */
+.mt10{margin-top:90px;}
+.mt20{margin-top:0px;}/* 设置NewGeekNav与顶部导航栏的距离 */
+.mt1{margin-top:49px;}/* 设置顶部导航栏与Main Site的距离 */
+.mt50{margin-top:15px;}
+
+	
+/* 负责单个网址的宽高、颜色、字体样式、大小 */
+.nav_menu{width:980px;overflow:hidden;} /* 设置整体的宽度 */
+.nav li{background:#F0F0F0;width:162px;height:40px;line-height:40px;font-family:STHupo;font-size:19px;color:#D200D2;border-left:1px solid #e6e6e6;float:left;text-align:center;text-shadow:1px 1px 1px #f5f5f5;border-bottom:1px solid #e6e6e6;}
+.nav li a{display:inline-block;width:162px;color:#F00078;}/*网址字体颜色*/
+.nav li a:hover{
+	background-color: #02F78E; /* 负责每个网址的背景颜色 ，现在为绿色*/
+	color: #F00078;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #000;}
+	
+.nav .active{background:#a5160f;width:124px;border-left:none;}
+
+
+/* 设置子元素为相对定位，可让子元素不继承Alpha值，保证字体颜色不透明 */
+
+/*.nav_menu{width:980px;overflow:hidden;}
+.nav li{background:#666;width:162px;height:40px;line-height:40px;font-size:16px;color:#fff;border-left:1px solid #eee;float:left;text-align:center;text-shadow:1px 1px 1px #000;border-bottom:1px solid #fff;}
+.nav li a{display:inline-block;width:162px;color:#FFFFFF;}
+.nav li a:hover{background-color:#000;color:#FFF;text-decoration:none;}
+.nav .active{background:#a5160f;width:124px;border-left:none;}
+*/
+
+/* 每个导航网址类别的标题，下面这一行设置颜色、宽高、字体大小、字体位置*/
+.btcont{width:290px; height:40px; font-size:26px; font-family:script;color:#FF8000; text-align:right; line-height:40px; background:#02F78E; z-index:500;margin:0 0 10px 1px; border-radius:4px;}
+.btcont {
+	filter:alpha(opacity=60);
+	-moz-opacity:0.6;
+	-khtml-opacity: 0.6;
+	opacity: 0.6;
+	}
+.fh{width:960px; height:12px; overflow:hidden; margin:0 auto;}
+
+
+/* 顶部的导航分类（导航栏） */
+.nav_menu_foot{width:1080px;overflow:hidden;}
+/* 下面这一行设置整体宽高、背景颜色、字体颜色大小等*/ 
+.nav_menu_foot li{background:#0080FF;width:162px;height:40px;line-height:40px;font-size:20px;color:#FFD306;border-left:1px solid #e4e4e4;float:left;text-align:center;border-bottom:1px solid #e4e4e4;}
+/* 下面这一行设置单个标签的字体颜色大小、整体宽高*/
+.nav_menu_foot li a{display:inline-block;width:162px;font-family:Arial,Helvetica,sans-serif;color:#FFD306;}
+/* 下面这一行设置单个标签的背景颜色*/
+.nav_menu_foot li a:hover{background-color:#0080FF;color:#FFF;text-decoration:none;}
+
+.foot_cb{width:980px; height:50px; line-height:50px; text-align:center; margin:20px auto 0;}
+
+.copyright{height:30px;line-height:80px;text-align:center;}
+
+
+/*----------------------------------------分割线----------------------------------------------*/
+
+.navbar-nav {
+    margin: 7.5px -15px;
+}
+.navbar-nav > li > a {
+    line-height: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+@media (max-width: 767px) {
+.navbar-nav .open .dropdown-menu {
+    background-color: transparent;
+    border: 0 none;
+    box-shadow: none;
+    float: none;
+    margin-top: 0;
+    position: static;
+    width: auto;
+}
+.navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu > li > a {
+    padding: 5px 15px 5px 25px;
+}
+.navbar-nav .open .dropdown-menu > li > a {
+    line-height: 20px;
+}
+.navbar-nav .open .dropdown-menu > li > a:focus, .navbar-nav .open .dropdown-menu > li > a:hover {
+    background-image: none;
+}
+}
+@media (min-width: 768px) {
+.navbar-nav {
+    float: left;
+    margin: 0;
+}
+.navbar-nav > li {
+    float: left;
+}
+.navbar-nav > li > a {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+
+.navbar-left {
+    float: left !important;
+}
+.navbar-right {
+    float: right !important;
+    margin-right: -15px;
+}
+.navbar-right ~ .navbar-right {
+    margin-right: 0;
+}
+
+
+
+/*---------------------------分割线------------------------------------------------------*/
+/*返回顶部*/
+*{margin:0;padding:0;}
+li{list-style:none}
+img{border:none;}
+.OnlineService_Bg {width:100px;overflow:hidden;position:fixed;right:0px;bottom:20px;z-index:10;}
+.OnlineService_Box {width:100%;overflow:hidden;}
+.OnlineService_Top {width:50px;height:50px;margin-bottom:40px;}
+/*下面这一行设置返回顶部箭头的颜色（第一个）*/
+.OnlineService_Top a {display:block;width:40px;height:33px;background-color:#EA0000;padding-top:57px;line-height:30px;font-size:16px;text-align:center;color:#fff;background-image:url(icon_Top.png);background-repeat:no-repeat;background-position:center 8px;cursor:pointer;text-decoration:none;color:#fff}
+ 
+

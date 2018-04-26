@@ -22,18 +22,11 @@
 	<!--logo标题 end-->
 	<!--搜索 begin-->
 	<div class="m-serch">
-		<form class="m-serch-area" onsubmit="return submitSearch();" method="get" target="_self" action="http://m.baidu.com/s">
-			<input class="m-serch-ipt J_search_input" type="text" name="word" placeholder="搜索或输入网址" id="input1" autocomplete="off"/>
-			<a type="submit" class="m-serch-btn J_search_btn" href="javascript:;" target="_self">搜索</a>
+		<form class="m-serch-area"  onsubmit="return submitSearch();" method="get" target="_blank" action="https://google.cutinlove.com/search"+"input1">
+			<input class="m-serch-ipt J_search_input" type="text" name="q" placeholder="Google最新原版镜像" id="input1" autocomplete="off"/>
+			<a type="submit" class="m-serch-btn J_search_btn" href="javascript:;" target="_self" onclick="fas()">搜索</a>	
 			<div class="m-serch-iclose J_search_clear" style="display:none;"></div>
 		</form>
-		<div class="m-serch-think m-serch-think-history" style="display:none;">
-			<ul class="J_search_list"></ul>
-			<div class="m-serch-clear J_clearSearch" href="javascript:;">
-				<a class="trig-clear J_clearHistory" href="javascript:;" target="_self">清空搜索记录</a>
-				<a class="trig-close J_closeSearch" href="javascript:;" target="_self">关闭</a>
-			</div>
-		</div>
 	</div>
 	<!--搜索 end-->
 	
@@ -208,6 +201,7 @@
 	</div>
 	<!--底部 begin-->
 <script type="text/javascript" src="js/footdaohang.js"></script>
+<script type="text/javascript" src="js/search.js"></script>
 	<!--底部 end-->
 </div>
 

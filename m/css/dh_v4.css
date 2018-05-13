@@ -13,7 +13,7 @@
 .m-listA li:nth-child(4n){width:19%}
 .m-listA li:nth-child(4n) a{display:inline-block;padding-right:0.33333rem}
 
-.m-listD{font-size:1rem;overflow:hidden;border-bottom:1px solid #e0e3e5}
+.m-listD{font-size:9;overflow:hidden;border-bottom:1px solid #e0e3e5}
 .m-listD:last-child{border-bottom:0 none}.m-listD-tit{position:relative;height:3rem;line-height:3rem;padding-left:1.04167rem;border-bottom:1px solid #e0e3e5;overflow:hidden}
 .m-listD-item{height:3.25rem;line-height:3.25rem;border-bottom:1px solid #e0e3e5}.m-listD-item:last-child{border-bottom:0 none}
 .m-listD-item a{position:relative;float:left;width:17.6%;text-align:center}
